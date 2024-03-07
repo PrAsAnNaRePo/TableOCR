@@ -1,6 +1,14 @@
 import tabula
 import pandas as pd
 import streamlit as st
+import os
+
+os.system('wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.deb')
+os.system('dpkg -i jdk-17_linux-x64_bin.deb')
+
+os.environ["JAVA_HOME"] = "/usr/lib/jvm/jdk-17"
+os.environ["PATH"] = os.environ["JAVA_HOME"] + "/bin:" + os.environ["PATH"]
+os.system('java -version')
 
 st.title("TableOCR")
 
