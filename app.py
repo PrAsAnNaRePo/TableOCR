@@ -1,9 +1,6 @@
 import tabula
 import pandas as pd
 import streamlit as st
-import os
-
-os.system('sudo apt install openjdk-8-jdk')
 
 st.title("TableOCR")
 
